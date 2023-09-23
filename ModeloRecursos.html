@@ -182,10 +182,11 @@
 
   <!-- QUESTÃO DE FIXAÇÃO - TESTE SEUS CONHECIMENTOS -->
 
-  <!-- ENGLOBA TODA A QUESTA DE FIXAÇÃO  -->
+  <!-- começo das questões de fixação -->
+  <!-- div que engloba toda a questao de fixação  -->
   <div id="base">
 
-    <!-- BOTÃO PARA ATIVAR A CAIXA COM A PERGUNTA  -->
+
     <div class="accordion accordion-flush" id="accordionFlushExample">
 
       <div class="accordion-item">
@@ -194,29 +195,30 @@
 
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
             data-bs-target="#flush-collapse" aria-expanded="false" aria-controls="flush-collapse" id="titulo">
+
             <i id="puzzle" class="fa-solid fa-puzzle-piece"></i>
             TESTE SEUS CONHECIMENTOS
       </div>
       </button>
+
       </h2>
 
-      <!-- CORPO DA PERGUNTA E ANIMACÃO DE  ABRIR -->
       <div id="flush-collapse" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
         <div class="accordion-body">
 
-          <!-- CAIXA COM A PERGUNTA  -->
 
-          <!-- PERGUNTA DA CAIXA -->
+
+
+          <!-- aqui você pode mudar a questão que você quiser -->
           <div id="caixa-de-pergunta">
 
             <h4 id="pergunta-principal">Dentre os itens elencados abaixo, qual deles
               favorece uma
               real administração do tempo?</h4>
 
-            <!-- DIV QUE ENGLOBA TODOS OS BOTÕES (PODE COLOCAR MAIS DE 2 OPCÕES, APENAS COPIAR E COLAR QUANTAS VEZES QUISER) -->
+              <!-- aqui são os itens de opções de reposta -->
             <div id="grupo-botao">
 
-              <!-- BOTÃO COM A RESPOSTA ERRADA QUE ABRE UM MODAL COM IMAGEM DA RESPOSTA ERRADA -->
 
               <!-- resposta errada -->
 
@@ -240,32 +242,80 @@
                   </div>
                 </div>
               </div>
+
+              <!-- resposta errada -->
+
+              <button type="button" class="btn " id="botao-resposta" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">Dedicar-se em
+                excesso a afazeres ou conversas
+                pessoais</button>
+              <!-- Modal com a reposta errada -->
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header" id="header-modal">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="botao-fechar"></button>
+                    </div>
+                    <div class="modal-body imagem">
+                      <img id="imagem-erro" src="imgs/ERRO.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- resposta certa  -->
+
+              <button type="button" class="btn " id="botao-resposta" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Reservar a última
+                hora do seu dia para planejar o
+                dia seguinte</button>
+
+              <!-- Modal com a respota certa -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header" id="header-modal">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="botao-fechar"></button>
+                    </div>
+                    <div class="modal-body imagem">
+                      <img id="imagem-acerto" src="imgs/ACERTO.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- resposta errada -->
+
+              <button type="button" class="btn" id="botao-resposta" data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">Abandonar um trabalho antes de
+                terminá-lo
+
+              </button>
+              <!-- Modal com resposta errada -->
+              <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header" id="header-modal">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        id="botao-fechar"></button>
+                    </div>
+                    <div class="modal-body imagem">
+                      <img id="imagem-erro" src="imgs/ERRO.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-
-  <!-- BOTÃO COM A RESPOSTA CERTA QUE ABRE O MODAL COM A IMAGEM DA RESPOSTA CERTA  -->
-
-  <!-- resposta certa  -->
-
-  <button type="button" class="btn " id="botao-resposta" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservar
-    a última
-    hora do seu dia para planejar o
-    dia seguinte</button>
-
-  <!-- Modal com a respota certa -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header" id="header-modal">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="botao-fechar"></button>
-        </div>
-        <div class="modal-body imagem">
-          <img id="imagem-acerto" src="imgs/ACERTO.png" alt="">
         </div>
       </div>
     </div>
