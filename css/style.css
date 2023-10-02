@@ -67,8 +67,17 @@
 body {
     margin: 0;
     background-color: var(--white);
-    max-width: 100%; 
+    max-width: 100%;
     overflow-x: hidden;
+}
+
+/* (transition) no CONTEÚDO PRINCIPAL  */
+.all-conteudo {
+    transition: 0.5s;
+}
+
+.menulateral:hover~.all-conteudo {
+    margin-left: 100px;
 }
 
 
@@ -159,8 +168,9 @@ ul li.menu a:hover {
     color: black;
 
 }
-.menulateral:hover~.all-conteudo{
-    margin-left:100px ;
+
+.menulateral:hover~.all-conteudo {
+    margin-left: 100px;
 }
 
 
@@ -179,14 +189,17 @@ ul li.menu a:hover {
     width: 100%;
     cursor: pointer;
     outline: none;
-  }
-  .dropdown-btn:hover{
+}
+
+.dropdown-btn:hover {
     color: #040504;
-  }
-  .dropdown-container {
+}
+
+.dropdown-container {
     display: none;
-  }
-  .dropdown-container a{
+}
+
+.dropdown-container a {
     display: flex;
     justify-content: flex-start;
     text-decoration: none;
@@ -195,22 +208,25 @@ ul li.menu a:hover {
     font-size: 20px;
     margin-bottom: 0.7rem;
     cursor: pointer;
-  }
-  [data-theme="dark"] .dropdown-container a{
+}
+
+[data-theme="dark"] .dropdown-container a {
     color: white;
-  }
-  .dropdown-container a:hover{
+}
+
+.dropdown-container a:hover {
     margin-left: 10px;
-  }
-  .circulo{
+}
+
+.circulo {
     margin-right: 40px;
     margin-left: -15px;
-  }
+}
 
-  .barra-sub{
+.barra-sub {
     margin-left: 10px;
 
-  }
+}
 
 
 [data-theme="dark"] ul li.menu a:hover {
@@ -616,20 +632,24 @@ o estado inicial de height 0 manteria o texto aparecendo */
 .accordion #content .caixaprincipal:hover~.accordion-content .txt-caixasecundaria {
     display: block;
 }
+
 /* Para quando hover no accordion-content tbm ocorrer a transição */
 .accordion-content:hover .txt-caixasecundaria {
     display: block;
 }
-.accordion-content:hover .txt-aviso{
+
+.accordion-content:hover .txt-aviso {
     display: none;
 }
+
 .accordion-content:hover {
 
     max-height: 1000px;
-    
+
     padding: 20px;
 
 }
+
 @media (max-width: 800px) {
     .accordion-content * {
         visibility: visible;
@@ -645,13 +665,16 @@ o estado inicial de height 0 manteria o texto aparecendo */
     .accordion a:hover~.accordion-content * {
         visibility: visible;
     }
+
     .txt-aviso {
         display: none;
     }
+
     .accordion-content .txt-caixasecundaria {
         display: block;
     }
-    #icon-pointer{
+
+    #icon-pointer {
         display: none;
     }
 
@@ -1083,10 +1106,11 @@ img#imagem-erro {
     place-items: center;
 }
 
-.Texto{
+.Texto {
     cursor: default;
 }
-.Texto:hover{
-margin-left: 10px;
+
+.Texto:hover {
+    margin-left: 10px;
 
 }
