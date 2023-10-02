@@ -614,7 +614,20 @@ o estado inicial de height 0 manteria o texto aparecendo */
 .accordion #content .caixaprincipal:hover~.accordion-content .txt-caixasecundaria {
     display: block;
 }
+/* Para quando hover no accordion-content tbm ocorrer a transição */
+.accordion-content:hover .txt-caixasecundaria {
+    display: block;
+}
+.accordion-content:hover .txt-aviso{
+    display: none;
+}
+.accordion-content:hover {
 
+    max-height: 1000px;
+    
+    padding: 20px;
+
+}
 @media (max-width: 800px) {
     .accordion-content * {
         visibility: visible;
