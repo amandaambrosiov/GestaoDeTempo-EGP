@@ -67,17 +67,8 @@
 body {
     margin: 0;
     background-color: var(--white);
-    max-width: 100%;
+    max-width: 100%; 
     overflow-x: hidden;
-}
-
-/* (transition) no CONTEÚDO PRINCIPAL  */
-.all-conteudo {
-    transition: 0.5s;
-}
-
-.menulateral:hover~.all-conteudo {
-    margin-left: 100px;
 }
 
 
@@ -103,7 +94,7 @@ body {
     width: 80px;
     height: 100%;
     background-color: #EFF7F0;
-    padding: 40px 0 40px 1%;
+    padding: 40px 0px 40px 1%;
     position: fixed;
     top: 0;
     left: 0;
@@ -119,7 +110,7 @@ body {
 
 /* aqui eu defini algumas propriedades que "ajudam" o header a ficar animado --jayron-- */
 
-#navbar {
+#navmenu {
     position: fixed;
     top: 0;
     width: 100%;
@@ -150,35 +141,92 @@ ul li.menu a {
     align-items: center;
     margin-bottom: 1rem;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.4s;
     height: 50px;
     width: 100%;
 }
+ .menulateral ul{
+    padding-left: 0px !important;
+    width: 105% !important;
+    position: relative;
+    right: 5.2%;
+    
+ }
+
 
 ul li.menu a .txt {
-    margin-left: 2.2rem;
+    margin-left: 2.3rem;
+
+}
+
+ul li.menu a {
+   padding-left: 20px;
 }
 
 ul li.menu a .icon>i {
-    font-size: 25px;
-    margin-left: -20px;
+    font-size: 25px;   
 }
 
 ul li.menu a:hover {
-    color: black;
-
+    color: #ffff;
+    background-color: #1a9c60;
+    
 }
 
-.menulateral:hover~.all-conteudo {
-    margin-left: 100px;
-}
+[data-theme="dark"] ul li.menu a:hover {
+    background-color: #3be3e2;
+  }
 
+    /* (transition) no CONTEÚDO PRINCIPAL  */
+.all-conteudo{
+    transition: 0.5s;
+}
+.menulateral:hover~.all-conteudo{
+    margin-left:100px ;
+}
 
 
 .menulateral:hover {
     width: 280px;
     z-index: 6;
 }
+
+
+/* ESTILO DO MENU RESPONSIVO */
+
+.offcanvas{
+    max-width: 70%;
+    padding-left: 0 !important;
+        margin-left: 0 !important;
+        background-color: var(--CormenuLateral);
+}
+
+/* LOGO EGP RESPONSIVO */
+
+.offcanvas-header h5 > img{
+  position: relative;
+  left: 2em;
+    
+}
+
+/* ESTILO BOTÃO FECHAR */
+ .offcanvas-header > .btn-close{
+    position: relative;
+    bottom: 30%;
+    color: #198754 !important;
+
+}
+
+
+/* MENU LATERAL RESPONSIVO CONTEÚDO */
+.offcanvas-body > .menulateral-responsivo > ul{
+        width: 111% !important;
+        padding-left: 1px !important;
+        margin-left: 0 !important;
+        position: relative;
+        right: 6%;
+}
+
 
 .dropdown-btn {
     text-decoration: none;
@@ -189,17 +237,14 @@ ul li.menu a:hover {
     width: 100%;
     cursor: pointer;
     outline: none;
-}
-
-.dropdown-btn:hover {
-    color: #040504;
-}
-
-.dropdown-container {
+  }
+  .dropdown-btn:hover{
+    color: #ffffff;
+  }
+  .dropdown-container {
     display: none;
-}
-
-.dropdown-container a {
+  }
+  .dropdown-container a{
     display: flex;
     justify-content: flex-start;
     text-decoration: none;
@@ -208,29 +253,28 @@ ul li.menu a:hover {
     font-size: 20px;
     margin-bottom: 0.7rem;
     cursor: pointer;
-}
-
-[data-theme="dark"] .dropdown-container a {
+    position: relative;
+    left: 35%;
+  }
+  [data-theme="dark"] .dropdown-container a{
     color: white;
-}
-
-.dropdown-container a:hover {
+  }
+  .dropdown-container a:hover{
     margin-left: 10px;
-}
-
-.circulo {
-    margin-right: 40px;
+  }
+  .circulo{
+    margin-right: 45px;
     margin-left: -15px;
-}
+  }
 
-.barra-sub {
+  .barra-sub{
     margin-left: 10px;
 
-}
+  }
 
 
 [data-theme="dark"] ul li.menu a:hover {
-    color: rgb(192, 185, 185);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -243,7 +287,7 @@ ul li.menu a.ativo {
 }
 
 [data-theme="dark"] ul li.menu a.ativo {
-    border-right: 5px solid rgb(192, 185, 185);
+    border-right: 5px solid #1ab6b6;
 }
 
 
@@ -335,17 +379,6 @@ hr {
     font-size: -100px;
 }
 
-
-
-
-/* estilo do iframe */
-/* iframe {
-    display: flex;
-    justify-content: center;
-    margin: auto;
-
-} */
-
 .dropdown-menu {
     background-color: var(--color-green);
     color: white;
@@ -358,13 +391,9 @@ hr {
 
 }
 
-
 [data-theme="dark"] .dropdown-menu {
     background-color: var(--color-ciano);
 }
-
-
-
 
 /* estilo do accordion */
 
@@ -632,24 +661,20 @@ o estado inicial de height 0 manteria o texto aparecendo */
 .accordion #content .caixaprincipal:hover~.accordion-content .txt-caixasecundaria {
     display: block;
 }
-
 /* Para quando hover no accordion-content tbm ocorrer a transição */
 .accordion-content:hover .txt-caixasecundaria {
     display: block;
 }
-
-.accordion-content:hover .txt-aviso {
+.accordion-content:hover .txt-aviso{
     display: none;
 }
-
 .accordion-content:hover {
 
     max-height: 1000px;
-
+    
     padding: 20px;
 
 }
-
 @media (max-width: 800px) {
     .accordion-content * {
         visibility: visible;
@@ -665,16 +690,13 @@ o estado inicial de height 0 manteria o texto aparecendo */
     .accordion a:hover~.accordion-content * {
         visibility: visible;
     }
-
     .txt-aviso {
         display: none;
     }
-
     .accordion-content .txt-caixasecundaria {
         display: block;
     }
-
-    #icon-pointer {
+    #icon-pointer{
         display: none;
     }
 
@@ -824,7 +846,7 @@ form {
     background-color: var(--color-dark-900);
 }
 
-[data-theme="dark"] #navbar {
+[data-theme="dark"] #navmenu {
     background-color: var(--color-dark-100);
 }
 
@@ -1106,11 +1128,10 @@ img#imagem-erro {
     place-items: center;
 }
 
-.Texto {
+.Texto{
     cursor: default;
 }
-
-.Texto:hover {
-    margin-left: 10px;
+.Texto:hover{
+margin-left: 10px;
 
 }
