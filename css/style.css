@@ -195,7 +195,7 @@ ul li.menu a:hover {
 
 /* LOGO EGP RESPONSIVO */
 
-.offcanvas-header h5>img {
+.offcanvas-header a>img {
     position: relative;
     left: 2em;
 }
