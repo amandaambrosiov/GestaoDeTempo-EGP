@@ -67,14 +67,13 @@
 body {
     margin: 0;
     background-color: var(--white);
-    max-width: 100%; 
+    max-width: 100%;
     overflow-x: hidden;
 }
 
 
 /* img logo da egp */
 #logo {
-
     width: 60px;
     height: auto;
     margin-bottom: 10px;
@@ -98,17 +97,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-
     overflow: hidden;
-
-    transition: 0.1s;
+    transition: 0.3s;
     z-index: 999;
-
-
 }
 
 
-/* aqui eu defini algumas propriedades que "ajudam" o header a ficar animado --jayron-- */
+/* aqui eu defini algumas propriedades que "ajudam" a nav a ficar animada --jayron-- */
 
 #navmenu {
     position: fixed;
@@ -117,15 +112,12 @@ body {
     box-sizing: border-box;
     background-color: #ffffff;
     z-index: 4;
-    /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.39); */
 }
 
-/* até aqui \o/ --jayron-- */
+/* fim da nav animada */
 
 ul {
-    /* height: 100%; */
     list-style: none;
-
 }
 
 [data-theme="dark"] ul li.menu a {
@@ -145,14 +137,13 @@ ul li.menu a {
     height: 50px;
     width: 100%;
 }
- .menulateral ul{
+
+.menulateral ul {
     padding-left: 0px !important;
     width: 105% !important;
     position: relative;
     right: 5%;
-    
- }
-
+}
 
 ul li.menu a .txt {
     margin-left: 2.3rem;
@@ -160,29 +151,30 @@ ul li.menu a .txt {
 }
 
 ul li.menu a {
-   padding-left: 20px;
+    padding-left: 20px;
 }
 
 ul li.menu a .icon>i {
-    font-size: 25px;   
+    font-size: 25px;
 }
 
 ul li.menu a:hover {
     color: #ffff;
     background-color: #1a9c60;
-    
+
 }
 
 [data-theme="dark"] ul li.menu a:hover {
     background-color: #3be3e2;
-  }
+}
 
-    /* (transition) no CONTEÚDO PRINCIPAL  */
-.all-conteudo{
+/* (transition) no CONTEÚDO PRINCIPAL  */
+.all-conteudo {
     transition: 0.5s;
 }
-.menulateral:hover~.all-conteudo{
-    margin-left:100px ;
+
+.menulateral:hover~.all-conteudo {
+    margin-left: 100px;
 }
 
 
@@ -194,37 +186,35 @@ ul li.menu a:hover {
 
 /* ESTILO DO MENU RESPONSIVO */
 
-.offcanvas{
+.offcanvas {
     max-width: 70%;
     padding-left: 0 !important;
-        margin-left: 0 !important;
-        background-color: var(--CormenuLateral);
+    margin-left: 0 !important;
+    background-color: var(--CormenuLateral);
 }
 
 /* LOGO EGP RESPONSIVO */
 
-.offcanvas-header h5 > img{
-  position: relative;
-  left: 2em;
-    
+.offcanvas-header h5>img {
+    position: relative;
+    left: 2em;
 }
 
 /* ESTILO BOTÃO FECHAR */
- .offcanvas-header > .btn-close{
+.offcanvas-header>.btn-close {
     position: relative;
     bottom: 30%;
     color: #198754 !important;
-
 }
 
 
 /* MENU LATERAL RESPONSIVO CONTEÚDO */
-.offcanvas-body > .menulateral-responsivo > ul{
-        width: 111% !important;
-        padding-left: 1px !important;
-        margin-left: 0 !important;
-        position: relative;
-        right: 6%;
+.offcanvas-body>.menulateral-responsivo>ul {
+    width: 111% !important;
+    padding-left: 1px !important;
+    margin-left: 0 !important;
+    position: relative;
+    right: 6%;
 }
 
 
@@ -237,14 +227,17 @@ ul li.menu a:hover {
     width: 100%;
     cursor: pointer;
     outline: none;
-  }
-  .dropdown-btn:hover{
+}
+
+.dropdown-btn:hover {
     color: #ffffff;
-  }
-  .dropdown-container {
+}
+
+.dropdown-container {
     display: none;
-  }
-  .dropdown-container a{
+}
+
+.dropdown-container a {
     display: flex;
     justify-content: flex-start;
     text-decoration: none;
@@ -256,32 +249,28 @@ ul li.menu a:hover {
     position: relative;
     /* mudei isso aqui bichana coloquei (em)kkkk */
     left: 2em;
-  }
-  [data-theme="dark"] .dropdown-container a{
+}
+
+[data-theme="dark"] .dropdown-container a {
     color: white;
-  }
-  .dropdown-container a:hover{
+}
+
+.dropdown-container a:hover {
     margin-left: 10px;
-  }
-  .circulo{
+}
+
+.circulo {
     margin-right: 2em;
     margin-left: -15px;
-  }
+}
 
-  .barra-sub{
+.barra-sub {
     margin-left: 10px;
-
-  }
-
+}
 
 [data-theme="dark"] ul li.menu a:hover {
     color: rgb(0, 0, 0);
 }
-
-
-
-
-
 
 ul li.menu a.ativo {
     border-right: 5px solid #44833D;
@@ -291,9 +280,6 @@ ul li.menu a.ativo {
     border-right: 5px solid #1ab6b6;
 }
 
-
-
-
 [data-theme="dark"] .dropdown-toggle {
     color: white;
 }
@@ -302,11 +288,8 @@ ul li.menu a.ativo {
     color: rgb(192, 185, 185);
 }
 
-
-
-
-
 /* fim do estilo do menu lateral */
+
 /* estilos gerais */
 
 [data-theme="dark"] .btn {
@@ -319,7 +302,6 @@ ul li.menu a.ativo {
     transition: 0.2s;
 }
 
-
 .nonedec {
     text-decoration: none;
     color: #b0b0b1;
@@ -330,16 +312,12 @@ ul li.menu a.ativo {
     color: #98989b;
 }
 
-
-
 .nav {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.39);
-
 }
 
 .btn {
     transition: 0.5s;
-
 }
 
 /* estilo do container de apresentação */
@@ -351,7 +329,6 @@ h2 {
     color: #44833D;
     font-weight: bolder;
 }
-
 
 /* estilo do conteudo da primeira pagina */
 
@@ -388,8 +365,6 @@ hr {
     margin-right: -2rem !important;
     margin-left: 2rem !important;
     position: fixed;
-
-
 }
 
 [data-theme="dark"] .dropdown-menu {
@@ -405,7 +380,6 @@ hr {
     justify-content: center;
     font-family: 'Raleway' !important;
     margin-bottom: 2rem;
-
     cursor: pointer;
 }
 
@@ -435,7 +409,6 @@ hr {
 
 .txt-aviso {
     display: block;
-
     padding: 10px;
     display: flex;
     justify-content: center;
@@ -589,19 +562,12 @@ hr {
     color: #040504;
 }
 
-
-
 /* estilo do pointer dos accordion */
 
 .accordion-content {
-
-
-
     /* Separei os paddings laterais para não gerar estranheza nas transições */
     padding-left: 20px;
     padding-right: 20px;
-
-
     background-color: #ff7f0033;
     border: none;
     /*linha de baixo da caixa principal*/
@@ -615,7 +581,6 @@ hr {
     /* Defini que atributos deveriam ser alterados mais suavemente 
   (note que especifiquei os paddings verticais, novamente para não chegar um efeito estranho) */
     transition: height 0.5s, max-height 0.5s, padding-bottom 0.5s, padding-top 0.5s;
-
 }
 
 /* .accordion-content>p {
@@ -631,7 +596,6 @@ o estado inicial de height 0 manteria o texto aparecendo */
 }
 
 .accordion #content .caixaprincipal:hover~.accordion-content {
-
     /* 
   novamente: não tenho ideia pq não funcionou direito com o
   height, mas normalmente você colocaria height 0 ao invés de max-height 0
@@ -662,20 +626,21 @@ o estado inicial de height 0 manteria o texto aparecendo */
 .accordion #content .caixaprincipal:hover~.accordion-content .txt-caixasecundaria {
     display: block;
 }
+
 /* Para quando hover no accordion-content tbm ocorrer a transição */
 .accordion-content:hover .txt-caixasecundaria {
     display: block;
 }
-.accordion-content:hover .txt-aviso{
+
+.accordion-content:hover .txt-aviso {
     display: none;
 }
+
 .accordion-content:hover {
-
     max-height: 1000px;
-    
     padding: 20px;
-
 }
+
 @media (max-width: 800px) {
     .accordion-content * {
         visibility: visible;
@@ -691,13 +656,16 @@ o estado inicial de height 0 manteria o texto aparecendo */
     .accordion a:hover~.accordion-content * {
         visibility: visible;
     }
+
     .txt-aviso {
         display: none;
     }
+
     .accordion-content .txt-caixasecundaria {
         display: block;
     }
-    #icon-pointer{
+
+    #icon-pointer {
         display: none;
     }
 
@@ -705,7 +673,6 @@ o estado inicial de height 0 manteria o texto aparecendo */
         margin-left: 2.5rem;
     }
 }
-
 
 /* estilo da tabela */
 .table {
@@ -726,11 +693,10 @@ o estado inicial de height 0 manteria o texto aparecendo */
     bottom: 0;
     left: 0;
     height: 10px;
-    background: linear-gradient(#03cc65 0%,#03cc65 100%);
+    background: linear-gradient(#03cc65 0%, #03cc65 100%);
     transition: width 0.5s ease-out;
     z-index: 5;
 }
-
 
 footer {
     margin-bottom: 15px;
@@ -1126,10 +1092,10 @@ img#imagem-erro {
     place-items: center;
 }
 
-.Texto{
+.Texto {
     cursor: default;
 }
 
-.Texto:hover{
-margin-left: 10px;
+.Texto:hover {
+    margin-left: 10px;
 }
