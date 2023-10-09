@@ -890,8 +890,6 @@ h2,
 
 /* header da questão de fixação */
 #base {
-    /* margin-left: 10%;
-    margin-top: 10px; */
     display: flex;
     justify-content: center;
     margin-left: 5%;
@@ -909,21 +907,15 @@ h2,
     color: #505050;
 }
 
-/* [data-theme="dark"] #puzzle{
-    color: white;
-} */
 
 
 #titulo {
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px;
     color: rgb(80, 80, 80);
 
 }
 
-/* [data-theme="dark"] #titulo{
-    color: white;
-} */
 
 .accordion-button {
     background-color: #3ce4cb;
@@ -935,14 +927,6 @@ h2,
     color: white;
 }
 
-/* [data-theme="dark"] .accordion-button::after{
-    color: white;
-} */
-
-
-/* [data-theme="dark"] .accordion-button{
-    background-color: var(--RoxoEscuroImportante);
-} */
 
 /* começo da questão */
 
@@ -1029,15 +1013,28 @@ h2.accordion-header {
 }
 
 /* modal após resposta do usuário */
+/* ajeitei a responsividade  */
 img#imagem-acerto {
-    width: 450px;
-    height: 250px;
+    width: 350px;
+    height: 150px;
 }
-
 img#imagem-erro {
     width: 450px;
     height: 250px;
 }
+@media screen {
+    @media(max-width:400px){
+        img#imagem-acerto {
+            width: 250px;
+            height: 170px;
+        }
+        img#imagem-erro {
+            width: 250px;
+            height: 170px;
+        }
+    }
+}
+
 
 .imagem {
     text-align: center;
