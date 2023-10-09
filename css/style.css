@@ -146,8 +146,19 @@ ul li.menu a {
 }
 
 ul li.menu a .txt {
-    margin-left: 2.3rem;
+    margin-left: 2.5rem;
 
+}
+
+@media screen {
+    @media(max-width: 400px){
+        ul li.menu a .txt {
+            margin-left: 0.5rem;
+        }
+        ul li.menu a .txt {
+            margin-left: 0.5rem;
+        }
+    }
 }
 
 ul li.menu a {
@@ -247,8 +258,11 @@ ul li.menu a:hover {
     margin-bottom: 0.7rem;
     cursor: pointer;
     position: relative;
-    /* mudei isso aqui bichana coloquei (em)kkkk */
-    left: 2em;
+    padding-left: 1.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    transition: color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 
 [data-theme="dark"] .dropdown-container a {
@@ -256,12 +270,13 @@ ul li.menu a:hover {
 }
 
 .dropdown-container a:hover {
-    margin-left: 10px;
+
+    color: white;
+    background-color: #1a9c60;
 }
 
 .circulo {
     margin-right: 2em;
-    margin-left: -15px;
 }
 
 .barra-sub {
@@ -641,7 +656,7 @@ o estado inicial de height 0 manteria o texto aparecendo */
     padding: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
     .accordion-content * {
         visibility: visible;
     }
@@ -670,7 +685,7 @@ o estado inicial de height 0 manteria o texto aparecendo */
     }
 
     ul li.menu a .txt {
-        margin-left: 2.5rem;
+        margin-left: 0.5rem;
     }
 }
 
