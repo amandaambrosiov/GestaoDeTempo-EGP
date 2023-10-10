@@ -1,55 +1,88 @@
-<!-- menu lateral começa aqui -->
-<nav class="menulateral shadow-lg">
-  <div class="btn-expandir">
-      <img src="imgs/logoEGP2.png" alt="logo" id="logo">
-  </div>
-  <!-- os topicos começam aqui  -->
-  <ul>
-      <li class="menu">
-          <a href="index.html">
-              <span class="icon "><i class="bi bi-person-workspace"></i></span>
-              <span class="txt">Apresentação</span>
-          </a>
-      </li>
+<!DOCTYPE html>
+<html lang="pt-br">
 
-      <li class="menu">
-          <a href="topico01.html">
-              <span class="icon "><i class="bi bi-1-circle"></i>
-              </span>
-              <span class="txt">Gestão de tempo</i></span>
-          </a>
-      </li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <!-- Cdn do bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- link do wow.js -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- nosso css -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- link do font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- link do script -->
+    <script src="../js/script.js" defer></script>
+    <!-- link do scroollrevel -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="http://ava.egp.ce.gov.br/2018/desv/logo/favicon.png" />
+</head>
 
-      <!-- topico com Subtópico -->
-      <button class="dropdown-btn">
-          <li class="menu">
-              <a data-valor="topico02.html">
-                  <span class="icon space"><i class="bi bi-2-circle"></i></span>
-                  <span class="txt">Poder de decisão<i class="bi bi-caret-down-fill barra-sub"></i></span>
-              </a>
-          </li>
-      </button> 
-      <!-- subtopicos aqui  -->
-      <div class="dropdown-container" id="spy">
-          <a href="topico02.html">
-              <i class="fa-regular fa-pen-to-square circulo"></i>Inicío</a>
-          <a href="#item1">
-              <i class="fa-regular fa-pen-to-square circulo"></i>Subtópico</a>
+<body>
 
-      </div>
+    <!-- menu lateral começa aqui -->
+    <nav class="menulateral shadow-lg">
+        <div class="btn-expandir">
+            <img src="imgs/logoEGP2.png" alt="logo" id="logo">
+        </div>
+        <!-- os topicos começam aqui  -->
+        <ul>
+            <li class="menu">
+                <a href="index.html">
+                    <span class="icon "><i class="bi bi-person-workspace"></i></span>
+                    <span class="txt">Apresentação</span>
+                </a>
+            </li>
 
-      <li class="menu">
-          <a href="topico03.html">
-              <span class="icon"><i class="bi bi-3-circle"></i></span>
-              <span class="txt">Planejamento de Metas</span>
-          </a>
-      </li>
-      <li class="menu">
-          <a href="referencias.html">
-              <span class="icon"><i class="bi bi-book-half"></i></span>
-              <span class="txt">Referências</span>
-          </a>
-      </li>
+            <li class="menu">
+                <a href="topico01.html">
+                    <span class="icon "><i class="bi bi-1-circle"></i>
+                    </span>
+                    <span class="txt">Gestão de tempo</i></span>
+                </a>
+            </li>
 
-  </ul>
-</nav>
+            <!-- topico com Subtópico -->
+            <button class="dropdown-btn">
+                <li class="menu">
+                    <a data-valor="topico02.html">
+                        <span class="icon space"><i class="bi bi-2-circle"></i></span>
+                        <span class="txt">Poder de decisão<i class="bi bi-caret-down-fill barra-sub"></i></span>
+                    </a>
+                </li>
+            </button>
+            <!-- subtopicos aqui  -->
+            <div class="dropdown-container" id="spy">
+                <a href="topico02.html">
+                    <i class="fa-regular fa-pen-to-square circulo"></i>Inicío</a>
+                <a href="#item1">
+                    <i class="fa-regular fa-pen-to-square circulo"></i>Subtópico</a>
+
+            </div>
+
+            <li class="menu">
+                <a href="topico03.html">
+                    <span class="icon"><i class="bi bi-3-circle"></i></span>
+                    <span class="txt">Planejamento de Metas</span>
+                </a>
+            </li>
+            <li class="menu">
+                <a href="referencias.html">
+                    <span class="icon"><i class="bi bi-book-half"></i></span>
+                    <span class="txt">Referências</span>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+</body>
+
+</html>
