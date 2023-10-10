@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     links.forEach(link => {
         const href = link.getAttribute("href");
-        if (href === currentPage) {
+        if (href === currentPage || link.getAttribute("data-valor")=== currentPage) {
             link.classList.add("ativo");
         }
     });
