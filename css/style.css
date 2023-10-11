@@ -72,6 +72,13 @@ body {
 }
 
 
+/* estilo para biblioteca scrollreveal */
+
+h1, .bd-callout, .none, p, .accordion, iframe, .imagem-scrool{
+    visibility: hidden;
+}
+
+
 /* img logo da egp */
 #logo {
     width: 60px;
