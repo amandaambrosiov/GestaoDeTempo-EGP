@@ -274,6 +274,9 @@ ul li.menu a:hover {
     color: white;
     background-color: #1a9c60;
 }
+[data-theme="dark"] .dropdown-container a:hover {
+    background-color: #3be3e2;
+}
 
 .circulo {
     margin-right: 2em;
