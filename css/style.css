@@ -135,7 +135,7 @@ ul li.menu a {
     margin-bottom: 1rem;
     cursor: pointer;
     transition: 0.4s;
-    height: 50px;
+    height: 60px;
     width: 100%;
 }
 
@@ -550,7 +550,7 @@ hr {
 
 .accordion #content .caixaprincipal#tituloSaibaMais {
     background-color: #3be3e2;
-    /*cor da caixa principal reflita*/
+    /*cor da caixa principal saiba mais*/
     color: #ffffffe0;
 }
 
@@ -560,7 +560,20 @@ hr {
 
 #saibamais {
     background-color: #d8f6fa;
-    /*cor da caixa secundaria importante */
+    /*cor da caixa secundaria saiba mais */
+}
+
+/* CAIXA CURIOSIDADES */
+.accordion #content .caixaprincipal#titulocuriosidade {
+    background-color: #A042E5;
+    /*cor da caixa principal curiosidade*/
+    color: #fffffff6;
+    /*cor da palavra na caixa principal*/
+}
+
+#curiosidades {
+    background-color:#c082ec94 ;
+    /*cor da caixa secundaria curiosidade */
 }
 
 .accordion #content .caixaprincipal#tituloexemplo {
